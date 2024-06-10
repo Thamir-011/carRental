@@ -1,0 +1,173 @@
+{
+  "Index": {
+    "_comment": "Home page",
+    "title": "Hello world!",
+    "carCatalogueTitle": "Car Catalogue",
+    "carCatalogueSubtitle": "Explore the cars you might like"
+  },
+
+  "navbar" : {
+    "_comment": "Navbar component",
+    "signIn": "Sign In"
+  },
+
+  "footer": {
+    "_comment": "Footer component",
+    "name": "Khayal",
+    "rights": "All rights reserved",
+    "rights-2": "@2023 Khayal, All Rights Reserved",
+    "footerLinks": {
+      "0": {
+        "title": "About",
+        "links": {
+          "0": "How It works",
+          "1": "Featured",
+          "2": "Partnership",
+          "3": "Bussiness Relation"
+        }
+      },
+      "1": {
+        "title": "Company",
+        "links": {
+          "0": "Events",
+          "1": "Blog",
+          "2": "Podcast",
+          "3": "Invite a friend"
+        }
+      },
+      "2": {
+        "title": "Socials",
+        "links": {
+          "0": "Discord",
+          "1": "Instagram",
+          "2": "Twitter",
+          "3": "Facebook"
+        }
+      }
+    },
+    "PrivacyPolicy": "Privacy Policy",
+    "TermsOfUse": "Terms Of Use"
+  },
+
+  "Hero": {
+    "_comment": "Hero components",
+    "title": "Find, Book, or Rent a cat -- quickly and easily!",
+    "subtitle": "Stream your car rental experience with our effortless booking process",
+    "buttonText": "Explore Cars"
+  },
+
+  "companiesFilter": {
+    "companiesList": {
+      "Aston Martin": {
+        "name": "Aston Martin"
+      },
+      "Audi": {
+        "name": "Audi"
+      },
+      "Bentley": {
+        "name": "Bentley"
+      },
+      "BMW": {
+        "name": "BMW"
+      },
+      "Cadillac": {
+        "name": "Cadillac"
+      },
+      "Chevrolet": {
+        "name": "Chevrolet"
+      },
+      "Chrysler": {
+        "name": "Chrysler"
+      },
+      "Dodge": {
+        "name": "Dodge"
+      },
+      "Ferrari": {
+        "name": "Ferrari"
+      },
+      "Ford": {
+        "name": "Ford"
+      },
+      "GMC": {
+        "name": "GMC"
+      },
+      "Honda": {
+        "name": "Honda"
+      },
+      "Hyundai": {
+        "name": "Hyundai"
+      },
+      "Infiniti": {
+        "name": "Infiniti"
+      },
+      "Jaguar": {
+        "name": "Jaguar"
+      },
+      "Jeep": {
+        "name": "Jeep"
+      },
+      "Kia": {
+        "name": "Kia"
+      },
+      "Lamborghini": {
+        "name": "Lamborghini"
+      },
+      "Land Rover": {
+        "name": "Land Rover"
+      },
+      "Lexus": {
+        "name": "Lexus"
+      },
+      "Lincoln": {
+        "name": "Lincoln"
+      },
+      "Maserati": {
+        "name": "Maserati"
+      },
+      "Mazda": {
+        "name": "Mazda"
+      },
+      "McLaren": {
+        "name": "McLaren"
+      },
+      "Mercedes-Benz": {
+        "name": "Marceds-Benz"
+      },
+      "MINI": {
+        "name": "MINI"
+      },
+      "Mitsubishi": {
+        "name": "Mitsubishi"
+      },
+      "Nissan": {
+        "name": "Nissan"
+      },
+      "Porsche": {
+        "name": "Porsche"
+      },
+      "Ram": {
+        "name": "Ram"
+      },
+      "Rolls-Royce": {
+        "name": "Rolls-Royce"
+      },
+      "Subaru": {
+        "name": "Subaru"
+      },
+      "Tesla": {
+        "name": "Tesla"
+      },
+      "Toyota": {
+        "name": "Toyota"
+      },
+      "Volkswagen": {
+        "name": "Volkswagen"
+      },
+      "Volvo": {
+        "name": "Volvo"
+      }
+    },
+    "noResult": "Nothing Found"
+  }
+
+}
