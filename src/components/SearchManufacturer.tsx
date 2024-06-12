@@ -11,13 +11,21 @@ function SearchManufacturer({ manufacturer, setManufacturer } : SearchManufactur
 
   const [query, setQuery] = useState("")
 
-  const t = useTranslations("companiesFilter")
+  const t = useTranslations("searchManufacturer")
+  const getManufacturerTranslation = (manufacturer: string) => {
+    if (manufacturer === "") return ""
+    return t(`companiesList.${manufacturer}.name`)
+  }
+  
 
   const filterdManufacturers = query === "" 
   ? manufacturers 
   : manufacturers.filter(item => (
-    item.toLowerCase().replace(/\s+/g, "").includes(query.toLowerCase().replace(/\s+/g, ""))
-  ))
+      getManufacturerTranslation(item).toLowerCase().replace(/\s+/g, "").includes (query.toLowerCase().replace(/\s+/g, ""))
+    )
+  )
+
+
 
   return (
     <div className="search-manufacturer">
@@ -35,8 +43,8 @@ function SearchManufacturer({ manufacturer, setManufacturer } : SearchManufactur
 
           <ComboboxInput 
             className="search-manufacturer__input"
-            placeholder="Volkswagen"
-            displayValue={(manufacturer: string) => manufacturer}
+            placeholder={t("make")}
+            displayValue={(manufacturer: string) => getManufacturerTranslation(manufacturer)}
             onChange={e => setQuery(e.target.value)}
           />
 
@@ -64,7 +72,7 @@ function SearchManufacturer({ manufacturer, setManufacturer } : SearchManufactur
                   >
                     {({ focus, selected }) => (
                       <div className={`group flex gap-2 ${selected && 'font-bold'}`}>
-                        {t(`companiesList.${item}.name`)}
+                        {getManufacturerTranslation(item)}
                       </div>
                     )}
                     {/* {t(`companiesList.${item}.name`)} */}

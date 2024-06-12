@@ -1,5 +1,6 @@
 import { CarProps } from "@/types";
 import { Dialog, DialogPanel, Transition, TransitionChild } from "@headlessui/react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Fragment } from "react";
 
@@ -10,6 +11,7 @@ interface CarDetailsProps {
 }
 
 function CarDetails({ isOpen, closeModel, car } : CarDetailsProps) {
+    const t = useTranslations("carDetails")
   return (
     <>
         <Transition appear show={isOpen} as={Fragment}>
@@ -98,7 +100,7 @@ function CarDetails({ isOpen, closeModel, car } : CarDetailsProps) {
                                     <div className="m-3 flex flex-wrap gap-4">
                                         {Object.entries(car).map(([key, value]) => (
                                             <div className="flex justify-between gap-5 w-full text-right" key={key}>
-                                                <h4 className="text-gray capitalize">{key.split("_").join(" ")}</h4>
+                                                <h4 className="text-gray capitalize">{t(key)}</h4>
                                                 <p className="text-black-100 font-semibold">{value}</p>
                                             </div>
                                         ))}

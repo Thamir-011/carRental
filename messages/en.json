@@ -3,12 +3,14 @@
     "_comment": "Home page",
     "title": "Hello world!",
     "carCatalogueTitle": "Car Catalogue",
-    "carCatalogueSubtitle": "Explore the cars you might like"
+    "carCatalogueSubtitle": "Explore the cars you might like",
+    "noResult": "Opps, no results"
   },
 
   "navbar" : {
     "_comment": "Navbar component",
-    "signIn": "Sign In"
+    "signIn": "Sign In",
+    "langBtn": "ع"
   },
 
   "footer": {
@@ -56,7 +58,9 @@
     "buttonText": "Explore Cars"
   },
 
-  "companiesFilter": {
+  "searchManufacturer": {
+    "_comment": "searchManufacturer component",
+    "make": "make",
     "companiesList": {
       "Aston Martin": {
         "name": "Aston Martin"
@@ -168,6 +172,61 @@
       }
     },
     "noResult": "Nothing Found"
-  }
+  },
 
+  "searchBar": {
+    "_comment": "searchBar component",
+    "model": "Model"
+  },
+
+  "customFilter": {
+    "_comment": "customFilter component",
+    "fuel": {
+      "fuel": "Fuel",
+      "gas": "Gas",
+      "electricity": "Electricity"
+    },
+
+    "year": {
+      "year": "Year"
+    }
+  },
+
+  "carCard": {
+    "_comment": "carCard component",
+    "currency": "$",
+    "perDay": "day",
+    "viewMoreBtn": "View More",
+    "transmission": {
+      "automatic": "Automatic",
+      "manual": "Manual"
+    },
+    "drive": {
+      "fwd": "FWD",
+      "rwd": "RWD",
+      "awd": "AWD",
+      "4wd": "4WD"
+    }
+  },
+
+  "carDetails": {
+    "_comment": "carDetails component",
+    "city_mpg": "City Mpg",
+    "class": "Class",
+    "combination_mpg": "Combination Mpg",
+    "cylinders": "Cylinders",
+    "displacement": "Displacement",
+    "drive": "Drive",
+    "fuel_type": "Fuel Type",
+    "highway_mpg": "Highway Mpg",
+    "make": "Make",
+    "model": "Model",
+    "transmission": "Transmission",
+    "year": "Year"
+  },
+
+  "showMore": {
+    "_comment": "showMore component",
+    "btnText": "Show More"
+  }
 }

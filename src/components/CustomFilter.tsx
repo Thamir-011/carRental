@@ -3,11 +3,13 @@
 import { CustomFilterPros } from "@/types"
 import { updateSearchParams } from "@/utils"
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions, Transition } from "@headlessui/react"
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { Fragment, useState } from "react"
 
 function CustomFilter({ title, options } : CustomFilterPros) {
+  const t = useTranslations("customFilter")
   const router = useRouter()
   const [selected, setSelected] = useState(options[0])
 
@@ -15,6 +17,10 @@ function CustomFilter({ title, options } : CustomFilterPros) {
     const newPathname = updateSearchParams(title, e.value.toLowerCase())
 
     router.push(newPathname, { scroll: false })
+  }
+
+  const handleSelectedTranselation = (selection: string) => {
+    return isNaN(+selection) ? t(`${title}.${selection.toLowerCase()}`) : selection
   }
 
   return (
@@ -28,12 +34,12 @@ function CustomFilter({ title, options } : CustomFilterPros) {
       >
         <div className="relative w-fit z-10">
           <ListboxButton className="custom-filter__btn">
-            <span className="block truncate">{selected.title}</span>
+            <span className="block truncate">{handleSelectedTranselation(selected.title)}</span>
             <Image 
               src="/chevron-up-down.svg"
               width={20}
               height={20}
-              className="ml-4 object-contain"
+              className="object-contain"
               alt="chevron up down"
             />
           </ListboxButton>
@@ -58,7 +64,7 @@ function CustomFilter({ title, options } : CustomFilterPros) {
                     <span className={`block truncate ${
                       selected ? 'font-bold' : "font-normal"
                     }`}>
-                      { option.title }
+                      { handleSelectedTranselation(option.title) }
                     </span>
                   )}
                 </ListboxOption>

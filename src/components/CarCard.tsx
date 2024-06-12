@@ -6,12 +6,14 @@ import Image from "next/image";
 import CustomButton from "./CustomButton";
 import { useState } from "react";
 import CarDetails from "./CarDetails";
+import { useTranslations } from "next-intl";
 
 interface CarCardProps {
     car: CarProps;
 }
 
 function CarCard({ car } : CarCardProps) {
+    const t = useTranslations("carCard")
     const { city_mpg, year, make, model, transmission, drive } = car;
 
     const [isOpen, setIsOpen] = useState(false)
@@ -28,11 +30,11 @@ function CarCard({ car } : CarCardProps) {
 
         <p className="flex mt-6 text-[32px] font-extrabold">
             <span className="self-start text-[14px] font-semibold">
-                $
+                {t("currency")}
             </span>
             {carRent} 
             <span className="self-end text-[14px] font-medium">
-                /day
+                /{t("perDay")}
             </span>
         </p>
 
@@ -55,7 +57,7 @@ function CarCard({ car } : CarCardProps) {
                         alt="steering wheel"
                     />
                     <p className="text-[14px]">
-                        {transmission === "a" ? "Autonatic" : "Manual"}
+                        {transmission === "a" ? t("transmission.automatic") : t("transmission.manual")}
                     </p>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
@@ -66,7 +68,7 @@ function CarCard({ car } : CarCardProps) {
                         alt="tire"
                     />
                     <p className="text-[14px]">
-                        {drive.toUpperCase()}
+                        {t(`drive.${drive}`)}
                     </p>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
@@ -84,7 +86,7 @@ function CarCard({ car } : CarCardProps) {
 
             <div className="car-card__btn-container">
                 <CustomButton 
-                    title="Vewi More"
+                    title={t("viewMoreBtn")}
                     containerStyles="w-full py-[16px] rounded-full bg-primary-blue"
                     textStyles="text-white text-[14px] leading-[17px] font-bold"
                     rightIcon="/right-arrow.svg"

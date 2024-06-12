@@ -9,8 +9,7 @@
 
   "navbar" : {
     "_comment": "Navbar component",
-    "signIn": "تسجيل الدخول",
-    "langBtn": "EN"
+    "signIn": "تسجيل الدخول"
   },
 
   "footer": {
@@ -38,7 +37,7 @@
         }
       },
       "2": {
-        "title": "التواصل الإجتماعي",
+        "title": "التواصل الإجتامعي",
         "links": {
           "0": "ديسكورد",
           "1": "إنستقرام",
@@ -62,113 +61,112 @@
     "_comment": "searchManufacturer component",
     "make": "الشركة",
     "companiesList": {
-      "": "",
-      "Aston Martin": {
+      "aston martin": {
         "name": "استون مارتن"
       },
-      "Audi": {
+      "audi": {
         "name": "أودي"
       },
-      "Bentley": {
+      "aentley": {
         "name": "بنتلي"
       },
-      "BMW": {
+      "bmw": {
         "name": "بي ام دبيلو"
       },
-      "Cadillac": {
+      "cadillac": {
         "name": "كادلاك"
       },
-      "Chevrolet": {
+      "chevrolet": {
         "name": "شيفروليه"
       },
-      "Chrysler": {
+      "chrysler": {
         "name": "كرايسلر"
       },
-      "Dodge": {
+      "dodge": {
         "name": "دودج"
       },
-      "Ferrari": {
+      "ferrari": {
         "name": "فيراري"
       },
-      "Ford": {
+      "ford": {
         "name": "فورد"
       },
-      "GMC": {
+      "gmc": {
         "name": "جي ام سي"
       },
-      "Honda": {
+      "honda": {
         "name": "هوندا"
       },
-      "Hyundai": {
+      "hyundai": {
         "name": "هيونداي"
       },
-      "Infiniti": {
+      "infiniti": {
         "name": "إنفينتي"
       },
-      "Jaguar": {
+      "jaguar": {
         "name": "جاقوار"
       },
-      "Jeep": {
+      "jeep": {
         "name": "جيب"
       },
-      "Kia": {
+      "kia": {
         "name": "كيا"
       },
-      "Lamborghini": {
+      "lamborghini": {
         "name": "لامبورجيني"
       },
-      "Land Rover": {
+      "land rover": {
         "name": "لاند روفر"
       },
-      "Lexus": {
+      "lexus": {
         "name": "لكزس"
       },
-      "Lincoln": {
+      "lincoln": {
         "name": "لينكولن"
       },
-      "Maserati": {
+      "maserati": {
         "name": "مازيراتي"
       },
-      "Mazda": {
+      "mazda": {
         "name": "مازدا"
       },
-      "McLaren": {
+      "mclaren": {
         "name": "مكلارين"
       },
-      "Mercedes-Benz": {
+      "mercedes-benz": {
         "name": "مارسيدس"
       },
-      "MINI": {
+      "mini": {
         "name": "ميني"
       },
-      "Mitsubishi": {
+      "mitsubishi": {
         "name": "ميتسوبيشي"
       },
-      "Nissan": {
+      "nissan": {
         "name": "نيسان"
       },
-      "Porsche": {
+      "porsche": {
         "name": "بورش"
       },
-      "Ram": {
+      "ram": {
         "name": "رام"
       },
-      "Rolls-Royce": {
+      "rolls-Royce": {
         "name": "رولزرويس"
       },
-      "Subaru": {
+      "subaru": {
         "name": "سوبارو"
       },
-      "Tesla": {
+      "tesla": {
         "name": "تيسلا"
       },
-      "Toyota": {
+      "toyota": {
         "name": "تيوتا"
       },
-      "Volkswagen": {
+      "volkswagen": {
         "name": "فولكسواجن"
       },
-      "Volvo": {
+      "volvo": {
         "name": "فولفو"
       }
     },

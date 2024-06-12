@@ -4,6 +4,7 @@ import { useState } from "react"
 import SearchManufacturer from "./SearchManufacturer"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import { useTranslations } from "next-intl"
 
 const SearchButton = ({ otherClasses } : { otherClasses: string }) => (
   <button
@@ -21,6 +22,8 @@ const SearchButton = ({ otherClasses } : { otherClasses: string }) => (
 )
 
 function SearchBar() {
+  const t = useTranslations("searchBar")
+
     const [manufacturer, setManufacturer] = useState('')
     const [model, setModel] = useState('')
     const router = useRouter()
@@ -69,7 +72,7 @@ function SearchBar() {
             src="/model-icon.png"
             width={25}
             height={25}
-            className="absolute w-[20px] h-[20px] ml-4"
+            className="absolute w-[20px] h-[20px] mx-4"
             alt="car model"
           />
           <input 
@@ -77,7 +80,7 @@ function SearchBar() {
             name="model"
             value={model}
             onChange={(e) => setModel(e.target.value)}
-            placeholder="Tiguan"
+            placeholder={t("model")}
             className="searchbar__input"
           />
           <SearchButton otherClasses="sm:hidden" />
